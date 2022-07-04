@@ -16,7 +16,7 @@ const RowBox = ({ title, fetchUrl, isLargeRow }) => {
     // if [],  run once when the row loads, and dont run again
     async function fetchData() {
       const request = await axios.get(fetchUrl);
-      console.log(request.data.results);
+      // console.log(request.data.results);
       setMovies(request.data.results);
       return request;
     }
